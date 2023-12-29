@@ -23,12 +23,12 @@ public class MemberService {
                 .build());
     }
 
-    public void login(String email, String pw){
-        memberRepo.save(Member.builder()
-                        .email(email)
-                        .PW(pw)
-                .build());
-    }
+//    public void login(String email, String pw){
+//        memberRepo.save(Member.builder()
+//                        .email(email)
+//                        .PW(pw)
+//                .build());
+//    }
 
     public void read(){
 

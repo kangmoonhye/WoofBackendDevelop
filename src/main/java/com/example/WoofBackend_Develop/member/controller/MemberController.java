@@ -25,16 +25,16 @@ public class MemberController {
         return ResponseEntity.ok().body("회원가입을 축하드립니다");
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/login")
-    public ResponseEntity login(String email, String pw){
-        memberService.login(email,pw);
+//    @RequestMapping(method = RequestMethod.POST, value = "/login")
+//    public ResponseEntity login(String email, String pw){
+//        memberService.login(email,pw);
+//
+//        return ResponseEntity.ok().body("로그인 성공");
+////        if(memberService.login()==false){
+////            return ResponseEntity.ok().body("로그인 실패");
+////        }
 
-        return ResponseEntity.ok().body("로그인 성공");
-//        if(memberService.login()==false){
-//            return ResponseEntity.ok().body("로그인 실패");
-//        }
-
-    }
+//    }
 
     @RequestMapping(method = RequestMethod.GET, value = "/read")
     public ResponseEntity read(String ID){
